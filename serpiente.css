@@ -1,0 +1,104 @@
+/* serpiente.css */
+body {
+    background-color: #0d0d0d; /* Fondo muy oscuro */
+    color: #00ff41; /* Verde Matrix/Punk */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.contenedor-juego {
+    text-align: center;
+    background: #1a1a1a;
+    padding: 20px;
+    border: 3px solid #ff0055; /* Borde rosa neón */
+    box-shadow: 0 0 20px #ff0055, inset 0 0 10px #ff0055;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px #ff0055, -2px -2px #00fbff;
+    margin-bottom: 10px;
+}
+
+#canvasJuego {
+    background-color: #000;
+    border: 2px solid #00fbff;
+    box-shadow: 0 0 15px #00fbff;
+    max-width: 100%;
+}
+
+/* Panel de Info */
+.panel-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.tarjeta-info {
+    background: #000;
+    padding: 10px;
+    border: 1px solid #00ff41;
+}
+
+/* Controles en Cruz */
+.controles {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 60px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    background: #000;
+    color: #00fbff;
+    border: 2px solid #00fbff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #00fbff;
+    color: #000;
+    box-shadow: 0 0 10px #00fbff;
+}
+
+button:disabled {
+    border-color: #444;
+    color: #444;
+    cursor: not-allowed;
+}
+
+/* Botones de acción */
+.acciones {
+    margin-top: 15px;
+}
+
+.acciones button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1.2rem;
+}
+
+#iniciar {
+    border-color: #00ff41;
+    color: #00ff41;
+}
+
+#iniciar:hover {
+    background: #00ff41;
+    color: #000;
+}
+
+.secundario {
+    border-color: #ff0055;
+    color: #ff0055;
+}

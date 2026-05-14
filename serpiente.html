@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake Punk Edition</title>
+   <link rel="stylesheet" href="serpiente.css">
+</head>
+<body>
+  <main class="contenedor-juego">
+    <h1>🐍 SNAKE_PUNK</h1>
+    
+    <section class="panel-info">
+      <div class="tarjeta-info">
+        <span>SCORE</span>
+        <strong id="puntaje">0</strong>
+      </div>
+      <div class="tarjeta-info">
+        <span>STATUS</span>
+        <strong id="estado">READY</strong>
+      </div>
+    </section>
+
+    <canvas id="canvasJuego" width="600" height="600"></canvas>
+
+    <section class="controles">
+      <div class="vacio"></div>
+      <button id="arriba" onclick="cambiarDireccion('arriba')">▲</button>
+      <div class="vacio"></div>
+
+      <button id="izquierda" onclick="cambiarDireccion('izquierda')">◀</button>
+      <button id="pausar" class="btn-pausa" onclick="pausarJuego()">⏸</button>
+      <button id="derecha" onclick="cambiarDireccion('derecha')">▶</button>
+
+      <div class="vacio"></div>
+      <button id="abajo" onclick="cambiarDireccion('abajo')">▼</button>
+      <div class="vacio"></div>
+    </section>
+
+    <section class="acciones">
+      <button id="iniciar" onclick="iniciarJuego()">START</button>
+      <button id="reiniciar" class="secundario" onclick="reiniciarJuego()">RESET</button>
+    </section>
+  </main>
+
+  <script src="serpiente.js"></script>
+</body>
+</html>
